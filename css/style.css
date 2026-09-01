@@ -131,31 +131,40 @@ footer {
 
 .yay-cember {
     position: absolute;
-    left: 20px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 340px;
-    height: 340px;
-    border: 3px solid #e8383d;
-    border-radius: 50%;
-}
-
-.yay-logo {
-    position: absolute;
-    left: 155px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #0f1524;
-    color: white;
+    width: clamp(220px, 32vw, 380px);
+    height: clamp(220px, 32vw, 380px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 20px;
+}
+
+.logo-halka {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: logoDonHalka 10s linear infinite;
+}
+
+.logo-ic {
+    position: absolute;
+    width: 72%;
+    height: 72%;
+    border-radius: 50%;
     z-index: 2;
+}
+
+@keyframes logoDonHalka {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .sirket-yay {
