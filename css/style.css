@@ -21,7 +21,6 @@ nav {
     padding: 18px 40px;
     flex-wrap: wrap;
 }
-
 nav h1 {
     font-size: 22px;
 }
@@ -53,11 +52,10 @@ nav a:hover {
 
 /* SECTIONS */
 section {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 30px;
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px 0 50px 40px;
 }
-
 section h2 {
     font-size: 30px;
     margin-bottom: 16px;
@@ -115,6 +113,13 @@ footer {
     font-size: 14px;
 }
 /* SIRKETLER - YAY DUZENI (metin duz, girinti egriye gore) */
+.sirketler-bolumu {
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px 0 50px 40px;
+    overflow: hidden;
+}
+
 .yay-alani {
     position: relative;
     display: flex;
@@ -172,11 +177,12 @@ footer {
     font-weight: 700;
     font-size: 19px;
     display: inline-block;
+    padding: 6px 4px;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .sirket-yay a:hover {
-    color: #e8383d;
+    color: #e8383d !important;
     transform: translateX(4px);
 }
 
@@ -289,4 +295,54 @@ section h3 {
 
 .geri-link:hover {
     color: #e8383d;
+}
+/* RESPONSIVE - KUCUK EKRANLAR */
+/* RESPONSIVE - KUCUK EKRANLAR */
+@media (max-width: 480px) {
+    .sirketler-bolumu {
+        width: 95%;
+        margin-left: 15px;
+    }
+
+    .yay-alani {
+        padding-left: 170px;
+        min-height: 280px;
+    }
+
+    .yay-cember {
+        width: 240px;
+        height: 240px;
+        left: 10px;
+    }
+
+    .yay-logo {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+        left: 100px;
+    }
+
+    .sirket-yay li:nth-child(1) { margin-left: 45px; }
+    .sirket-yay li:nth-child(2) { margin-left: 70px; }
+    .sirket-yay li:nth-child(3) { margin-left: 80px; }
+    .sirket-yay li:nth-child(4) { margin-left: 80px; }
+    .sirket-yay li:nth-child(5) { margin-left: 70px; }
+    .sirket-yay li:nth-child(6) { margin-left: 45px; }
+
+    .sirket-yay a {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .bilgi-kartlari {
+        gap: 12px;
+    }
+
+    .bilgi-karti {
+        min-width: 120px;
+        padding: 14px 18px;
+    }
 }
