@@ -365,3 +365,148 @@ section h3 {
         font-size: 14px;
     }
 }
+/* ILETISIM FORMU */
+.iletisim-form {
+    max-width: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-grup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-grup label {
+    font-weight: 600;
+    color: #1a2e4a;
+    font-size: 14px;
+}
+
+.form-grup input,
+.form-grup textarea {
+    border: 1px solid #dde3ec;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+}
+
+.form-grup input:focus,
+.form-grup textarea:focus {
+    outline: none;
+    border-color: #e8383d;
+}
+
+.form-buton {
+    align-self: flex-start;
+    background-color: #e8383d;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-buton:hover {
+    background-color: #c8282d;
+}
+/* NAVBAR DROPDOWN - Sirketlerimiz menusu (sade, tek sutun) */
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-tetik {
+    background: none;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.15s ease;
+}
+
+.nav-dropdown-tetik:hover {
+    color: #e8383d;
+}
+
+/* Bosluk koprusu: hover kopmasin diye padding kullanilir, margin/gap yok */
+.nav-dropdown-icerik {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 200px;
+    z-index: 10;
+}
+
+/* Gercek gorsel kutu */
+.nav-dropdown-icerik-ic {
+    display: block;
+    background-color: #0f1524;
+    border: 1px solid #26314a;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding: 6px 0;
+    list-style: none;
+}
+
+.nav-dropdown-icerik-ic li {
+    list-style: none;
+}
+
+.nav-dropdown-icerik-ic a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav-dropdown-icerik-ic a:hover {
+    background-color: #1a2438;
+    color: #e8383d;
+    border-left-color: #e8383d;
+}
+
+/* Masaustu: hover / focus-within ile ac */
+@media (hover: hover) {
+    .nav-dropdown:hover .nav-dropdown-icerik,
+    .nav-dropdown:focus-within .nav-dropdown-icerik {
+        display: block;
+    }
+}
+
+.nav-dropdown:focus-within .nav-dropdown-icerik {
+    display: block;
+}
+
+/* Mobil: JS ile eklenen class ile acilir */
+.nav-dropdown.acik .nav-dropdown-icerik {
+    display: block;
+}
+
+/* Mobilde ekran disina taşmasin */
+@media (max-width: 480px) {
+    .nav-dropdown-icerik {
+        width: 190px;
+        left: auto;
+        right: 12px;
+    }
+}

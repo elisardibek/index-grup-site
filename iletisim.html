@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>İletişim | Index Grup</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+          <h1>Index Grup</h1>
+        <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li class="nav-dropdown">
+    <button type="button" class="nav-dropdown-tetik" aria-expanded="false">Şirketlerimiz ▾</button>
+    <div class="nav-dropdown-icerik">
+        <ul class="nav-dropdown-icerik-ic">
+            <li><a href="index-firma.html">Index</a></li>
+            <li><a href="despec.html">Despec</a></li>
+            <li><a href="datagate.html">Datagate</a></li>
+            <li><a href="netex.html">Netex</a></li>
+            <li><a href="teklos.html">Teklos</a></li>
+            <li><a href="hb-bilisim.html">HB Bilişim</a></li>
+        </ul>
+    </div>
+</li>
+    <li><a href="iletisim.html">İletişim</a></li>
+</ul>
+        </nav>
+
+        <section>
+            <h2>İletişim</h2>
+            <p>Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz, en kısa sürede size dönüş yapacağız.</p>
+
+           <form action="https://formspree.io/f/xoeqdldn" method="POST" class="iletisim-form">
+                <div class="form-grup">
+                    <label for="ad">Ad Soyad</label>
+                    <input type="text" id="ad" name="ad" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="konu">Konu</label>
+                    <input type="text" id="konu" name="konu" required>
+                </div>
+
+               <div class="form-grup">
+    <label for="mesaj">Mesajınız</label>
+    <textarea id="mesaj" name="mesaj" rows="6" required></textarea>
+</div>
+
+<button type="submit" class="form-buton">Gönder</button>
