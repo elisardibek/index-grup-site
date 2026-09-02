@@ -510,3 +510,90 @@ section h3 {
         right: 12px;
     }
 }
+/* HAKKIMIZDA - DEGERLER GRID */
+.deger-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.deger-kart {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 10px;
+    padding: 22px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deger-kart:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 21, 36, 0.08);
+}
+
+.deger-ikon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.deger-kart h4 {
+    color: #1a2e4a;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.deger-kart p {
+    font-size: 13px;
+    color: #666;
+    max-width: none;
+}
+
+@media (max-width: 900px) {
+    .deger-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .deger-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* HAKKIMIZDA - ZAMAN CIZELGESI */
+.zaman-cizelgesi {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    border-left: 3px solid #e8383d;
+}
+
+.zaman-adim {
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.zaman-adim::before {
+    content: "";
+    position: absolute;
+    left: -38px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #e8383d;
+    border: 3px solid #f7f8fa;
+}
+
+.zaman-yil {
+    font-weight: 700;
+    color: #e8383d;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.zaman-metin {
+    color: #444;
+    font-size: 15px;
+}
