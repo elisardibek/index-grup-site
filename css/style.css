@@ -658,3 +658,86 @@ section h3 {
         grid-template-columns: 1fr;
     }
 }
+/* SSS - AKORDEON */
+.sss-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.sss-oge {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 8px;
+    padding: 4px 20px;
+}
+
+.sss-oge summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #1a2e4a;
+    font-size: 16px;
+    padding: 16px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sss-oge summary::-webkit-details-marker {
+    display: none;
+}
+
+.sss-oge summary::after {
+    content: "+";
+    font-size: 22px;
+    color: #e8383d;
+    margin-left: 12px;
+    transition: transform 0.2s ease;
+}
+
+.sss-oge[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.sss-oge p {
+    color: #555;
+    font-size: 15px;
+    padding-bottom: 18px;
+    max-width: none;
+}
+/* SSS - KATEGORI BASLIKLARI VE CTA */
+.sss-kategori-blok {
+    margin-bottom: 36px;
+}
+
+.sss-kategori-baslik {
+    font-size: 19px;
+    color: #1a2e4a;
+    margin-bottom: 14px;
+}
+
+.sss-cta {
+    background-color: #0f1524;
+    border-radius: 12px;
+    padding: 36px;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.sss-cta h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.sss-cta p {
+    color: #cdd8e8;
+    margin-bottom: 20px;
+}
+
+.sss-cta .form-buton {
+    display: inline-block;
+    text-decoration: none;
+}
