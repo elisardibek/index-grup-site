@@ -741,3 +741,109 @@ section h3 {
     display: inline-block;
     text-decoration: none;
 }
+/* KARIYER - POZISYON LISTESI */
+.pozisyon-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.pozisyon-kart {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 10px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    transition: box-shadow 0.2s ease;
+}
+
+.pozisyon-kart:hover {
+    box-shadow: 0 6px 16px rgba(15, 21, 36, 0.08);
+}
+
+.pozisyon-kart h3 {
+    font-size: 17px;
+    color: #1a2e4a;
+    margin-bottom: 4px;
+}
+
+.pozisyon-etiket {
+    font-size: 13px;
+    color: #888;
+}
+/* KARIYER - POZISYON AKORDEONU */
+.pozisyon-oge {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 10px;
+    padding: 4px 24px;
+    margin-bottom: 14px;
+}
+
+.pozisyon-oge summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.pozisyon-oge summary::-webkit-details-marker {
+    display: none;
+}
+
+.pozisyon-oge h3 {
+    font-size: 17px;
+    color: #1a2e4a;
+    margin-bottom: 4px;
+}
+
+.pozisyon-etiket {
+    font-size: 13px;
+    color: #888;
+}
+
+.pozisyon-ok {
+    color: #e8383d;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.pozisyon-oge[open] .pozisyon-ok {
+    transform: rotate(180deg);
+}
+
+.pozisyon-detay {
+    padding-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+}
+
+.pozisyon-detay h4 {
+    font-size: 15px;
+    color: #1a2e4a;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+
+.pozisyon-detay h4:first-child {
+    margin-top: 0;
+}
+
+.pozisyon-detay p {
+    font-size: 14px;
+    color: #555;
+    max-width: none;
+}
+
+.pozisyon-detay .form-buton {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 16px;
+}
