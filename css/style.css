@@ -72,12 +72,93 @@ section p {
 
 /* FOOTER */
 footer {
-    background-color: #1a2e4a;
+    background-color: #0f1524;
     color: #cdd8e8;
-    text-align: center;
-    padding: 24px;
+    padding: 50px 0 24px;
     margin-top: 70px;
     font-size: 14px;
+}
+
+.footer-ic {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 36px;
+}
+
+.footer-sutun h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-sutun p {
+    color: #9aa8bd;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-sutun ul {
+    list-style: none;
+}
+
+.footer-sutun ul li {
+    margin-bottom: 10px;
+}
+
+.footer-sutun a {
+    color: #cdd8e8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-sutun a:hover {
+    color: #e8383d;
+}
+
+.footer-sosyal {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.footer-sosyal a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #2a3550;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-sosyal a:hover {
+    background-color: #e8383d;
+    border-color: #e8383d;
+}
+
+.footer-alt {
+    border-top: 1px solid #22304a;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #7c8aa0;
+}
+
+@media (max-width: 700px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
 }
 
 /* SIRKETLER BOLUMU - kapsayici */
