@@ -4,7 +4,7 @@ Index Grup'un altı grup şirketini (Index, Despec, Datagate, Netex, Teklos, HB 
 
 ## 🔗 Canlı Site
 
-[Buraya GitHub Pages linki eklenecek]
+[https://elisardibek.github.io/index-grup-site/](https://elisardibek.github.io/index-grup-site/)
 
 ## 📋 Proje Hakkında
 
