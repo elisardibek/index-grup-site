@@ -847,3 +847,116 @@ section h3 {
     text-decoration: none;
     margin-top: 16px;
 }
+/* HABERLER - KART GRID */
+.haber-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.haber-kart {
+    background-color: white;
+    border: 1px solid #e0e4ea;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.haber-kart:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 21, 36, 0.08);
+}
+
+.haber-gorsel {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.haber-icerik {
+    padding: 20px 22px;
+}
+
+.haber-kart h3 {
+    font-size: 19px;
+    color: #1a2e4a;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.haber-alt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.haber-tarih {
+    font-size: 13px;
+    color: #888;
+}
+
+.haber-devam-buton {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #e8383d;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.haber-devam-buton:hover {
+    background-color: #c8282d;
+}
+
+@media (max-width: 900px) {
+    .haber-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .haber-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* HABER DETAY SAYFASI */
+.haber-detay-icerik {
+    max-width: 800px;
+}
+
+.haber-detay-icerik .haber-tarih {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.haber-detay-icerik h2 {
+    font-size: 30px;
+    color: #1a2e4a;
+    margin-bottom: 20px;
+    border: none;
+    padding: 0;
+}
+
+.haber-detay-gorsel {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.haber-detay-icerik p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 16px;
+    max-width: none;
+}
