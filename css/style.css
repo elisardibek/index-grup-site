@@ -54,7 +54,7 @@ nav a:hover {
 section {
     width: 90%;
     max-width: 1300px;
-    margin: 50px 0 50px 40px;
+    margin: 50px auto;
 }
 section h2 {
     font-size: 30px;
@@ -67,7 +67,10 @@ section h2 {
 section p {
     color: #444;
     font-size: 17px;
-    max-width: 700px;
+    max-width: 1000px;
+}
+.genis-metin {
+    max-width: none;
 }
 
 /* FOOTER */
@@ -165,7 +168,7 @@ footer {
 .sirketler-bolumu {
     width: 90%;
     max-width: 1300px;
-    margin: 50px 0 50px 40px;
+    margin: 50px auto;
     overflow: hidden;
 }
 
@@ -327,6 +330,7 @@ section h3 {
     flex-wrap: wrap;
     margin: 30px 0;
 }
+
 
 .bilgi-karti {
     background-color: white;
@@ -1040,4 +1044,9 @@ section h3 {
     font-size: 16px;
     margin-bottom: 16px;
     max-width: none;
+}
+ header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
