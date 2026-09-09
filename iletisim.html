@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header>
         <nav>
           <h1>Index Grup</h1>
         <ul>
@@ -38,28 +39,32 @@
             <p>Sorularınız veya talepleriniz için aşağıdaki formu doldurabilirsiniz, en kısa sürede size dönüş yapacağız.</p>
 
            <form action="https://formspree.io/f/xoeqdldn" method="POST" class="iletisim-form">
-                <div class="form-grup">
-                    <label for="ad">Ad Soyad</label>
-                    <input type="text" id="ad" name="ad" required>
-                </div>
+    <input type="hidden" name="_subject" value="Index Grup İletişim Formu - Yeni Mesaj">
+    <input type="hidden" name="_next" value="index.html">
+    <input type="text" name="_gotcha" style="display:none">
 
-                <div class="form-grup">
-                    <label for="email">E-posta</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+    <div class="form-grup">
+        <label for="ad">Ad Soyad</label>
+        <input type="text" id="ad" name="ad" required>
+    </div>
 
-                <div class="form-grup">
-                    <label for="konu">Konu</label>
-                    <input type="text" id="konu" name="konu" required>
-                </div>
+    <div class="form-grup">
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" required>
+    </div>
 
-               <div class="form-grup">
+    <div class="form-grup">
+        <label for="konu">Konu</label>
+        <input type="text" id="konu" name="konu" required>
+    </div>
+
+   <div class="form-grup">
     <label for="mesaj">Mesajınız</label>
     <textarea id="mesaj" name="mesaj" rows="6" required></textarea>
 </div>
 
 <button type="submit" class="form-buton">Gönder</button>
-            </form>
+</form>
         </section>
 
         <footer>
@@ -71,7 +76,7 @@
                 <div class="footer-sosyal">
                     <a href="cok-yakinda.html" aria-label="LinkedIn">in</a>
                     <a href="cok-yakinda.html" aria-label="Instagram">ig</a>
-                    <a href="cok-yakinda.html" aria-label="X >X</a>
+                    <a href="cok-yakinda.html" aria-label="X (Twitter)">X</a>
                     <a href="cok-yakinda.html" aria-label="YouTube">▶</a>
                 </div>
             </div>
