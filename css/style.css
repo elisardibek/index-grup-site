@@ -578,9 +578,7 @@ section h3 {
     }
 }
 
-.nav-dropdown:focus-within .nav-dropdown-icerik {
-    display: block;
-}
+
 
 /* Mobil: JS ile eklenen class ile acilir */
 .nav-dropdown.acik .nav-dropdown-icerik {
@@ -1049,4 +1047,68 @@ section h3 {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+/* HAMBURGER MENU - mobilde */
+.hamburger-tetik {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-tetik span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-tetik {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul.acik {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a,
+    .nav-dropdown-tetik {
+        display: block;
+        padding: 14px 0;
+        border-top: 1px solid #22304a;
+    }
+
+    .nav-dropdown-icerik {
+        position: static;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .nav-dropdown-icerik-ic {
+    background-color: #1a2438;
+}
+
+.nav-dropdown-icerik-ic a {
+    padding-left: 20px;
+    border-left: 3px solid #e8383d;
+    font-size: 14px;
+}
 }
