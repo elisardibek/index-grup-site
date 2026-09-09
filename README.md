@@ -27,12 +27,14 @@ Bu proje, Doğuş Üniversitesi Yazılım Mühendisliği bölümü HTML5/CSS ö�
 | `haberler.html` | Haberler listesi |
 | `haber-1.html` – `haber-6.html` | Haber detay sayfaları |
 | `iletisim.html` | İletişim formu (Formspree entegrasyonlu) |
+| `404.html` | Bulunamayan sayfalar için özel 404 sayfası |
+| `cok-yakinda.html` | Henüz aktif olmayan sosyal medya linkleri için yer tutucu sayfa |
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- **HTML5** — semantic etiketler (`nav`, `section`, `footer`, `article`, `details`)
+- **HTML5** — semantic etiketler (`header`, `nav`, `section`, `footer`, `article`, `details`)
 - **CSS3** — Flexbox, Grid, medya sorguları (responsive tasarım), animasyonlar
-- **JavaScript** — mobil navigasyon menüsü, URL parametresi ile form ön doldurma
+- **JavaScript** — mobil hamburger menü, "Şirketlerimiz" açılır menüsü (tıklama + erişilebilirlik), URL parametresi ile form ön doldurma
 - **Formspree.io** — sunucu tarafı kod yazmadan iletişim formu işleme
 - **Git & GitHub** — versiyon kontrolü
 - **GitHub Pages** — statik site barındırma
@@ -45,19 +47,19 @@ Site aşağıdaki ekran genişliklerinde test edilmiş ve düzgün çalışacak 
 - 1280px (masaüstü)
 
 ## 📁 Klasör Yapısı
-```
 index-grup-site/
 ├── index.html
 ├── (diğer .html sayfaları)
 ├── css/
-│   └── style.css
+│ └── style.css
+├── js/
+│ └── dropdown.js
 └── img/
-    └── (kullanılan görseller)
-```
+└── (kullanılan görseller)
 
 ## 🖼️ Görseller
 
-Sitede kullanılan tüm görseller [Pexels](https://www.pexels.com) üzerinden ücretsiz, ticari kullanıma uygun lisansla temin edilmiştir. Her görsele erişilebilirlik amacıyla açıklayıcı `alt` metni eklenmiştir.
+Sitede kullanılan görseller özel olarak hazırlanmış ve `img/` klasöründe yerel olarak barındırılmaktadır. Her görsele erişilebilirlik amacıyla açıklayıcı `alt` metni eklenmiştir.
 
 ## ✅ Proje Gereksinimleri Karşılama Durumu
 
@@ -76,4 +78,4 @@ Proje sürecine dair geri bildirim ve öğrenilenler için [FEEDBACK.md](FEEDBAC
 
 ## 👤 Geliştirici
 
-Elis Ardibek — Doğuş Üniversitesi, Yazılım Mühendisliği
+Elisar Dibek — Doğuş Üniversitesi, Yazılım Mühendisliği
