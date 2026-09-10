@@ -53,3 +53,36 @@ dropdownButonlari.forEach(function (buton) {
         buton.setAttribute('aria-expanded', acikMi ? 'true' : 'false');
     });
 });
+// İletişim formu - sayfa yenilenmeden (AJAX) gönderim
+var iletisimFormu = document.getElementById('iletisim-formu');
+
+if (iletisimFormu) {
+    iletisimFormu.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var mesajAlani = document.getElementById('form-mesaj');
+        var veri = new FormData(iletisimFormu);
+
+        fetch(iletisimFormu.action, {
+            method: 'POST',
+            body: veri,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(function (yanit) {
+            if (yanit.ok) {
+                mesajAlani.textContent = 'Mesajınız başarıyla gönderildi. Teşekkür ederiz!';
+                mesajAlani.style.color = '#1a8a4a';
+                iletisimFormu.reset();
+            } else {
+                mesajAlani.textContent = 'Bir hata oluştu, lütfen tekrar deneyin.';
+                mesajAlani.style.color = '#e8383d';
+            }
+            mesajAlani.style.display = 'block';
+        })
+        .catch(function () {
+            mesajAlani.textContent = 'Bir hata oluştu, lütfen tekrar deneyin.';
+            mesajAlani.style.color = '#e8383d';
+            mesajAlani.style.display = 'block';
+        });
+    });
+}
